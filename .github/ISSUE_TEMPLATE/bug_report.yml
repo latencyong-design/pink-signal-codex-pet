@@ -1,0 +1,28 @@
+name: Install problem
+description: Report a Pink Signal install or package issue.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Installer output
+      description: Redact your username and local paths before posting.
+      render: text
+    validations:
+      required: false

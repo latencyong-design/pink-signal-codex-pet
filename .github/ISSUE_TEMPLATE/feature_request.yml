@@ -1,0 +1,11 @@
+name: Feature request
+description: Suggest a package, installer, or docs improvement.
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+    validations:
+      required: true
